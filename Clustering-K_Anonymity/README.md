@@ -1,19 +1,17 @@
-Clustering Based k-Anonymization
+Clustering Based k-Anonymisation
 ===========================
 
-This repository is an **open source python implementation for Clustering based k-Anonymization**. I implement these algorithms (k-nearest neighbor, k-member[1] and OKA[2]) in python for further study.
+This repository is an **open source python implementation for Clustering based k-Anonymisation**. I implement these algorithms (k-nearest neighbor, k-member[1] and OKA[2]) in python for further study.
 
 ### Motivation 
-Researches on data privacy have lasted for more than ten years, lots of great papers have been published. However, only a few open source projects are available on Internet [3-4], most open source projects are using algorithms proposed before 2004! Fewer projects have been used in real life. Worse more, most people even don't hear about it. Such a tragedy! 
-
-I decided to make some effort. Hoping these open source repositories can help researchers and developers on data privacy (privacy preserving data publishing).
+Big Data challenges growth in privacy and researches on data privacy that lasted for more than ten years, an enormous amount of papers been published. However, few open source projects are available on the Internet, most open source projects are using algorithms proposed prior to 2004! A very few projects have been used in real life. In addition, there is not a lot of awareness among people as they don't hear about it.  
 
 ### Attention
 I used **both adult and INFORMS** dataset in this implementation. For clarification, **we transform NCP to percentage**. This NCP percentage is computed by dividing NCP value with the number of values in dataset (also called GCP[5]). The range of NCP percentage is from 0 to 1, where 0 means no information loss, 1 means loses all information (more meaningful than raw NCP, which is sensitive to size of dataset). 
 
 
 ### Usage and Parameters:
-My Implementation is based on Python 3.7.3 64Bit architecture. Please make sure your Python environment is collectly installed. You can run Mondrian in following steps: 
+My Implementation is based on Python 3.7.3 64Bit architecture. Please make sure your Python environment is correctly installed. You can run Mondrian in following steps: 
 
 1) Download (or clone) the whole project. 
 
@@ -21,7 +19,7 @@ My Implementation is based on Python 3.7.3 64Bit architecture. Please make sure 
 
 3) Default K value is set to 10
 
-Parameters:
+CLI Parameters:
 
 	#Usage: python anonymizer [a | i] [knn | kmember | oka] [k | qi | data]
 	#a: adult dataset, i: INFORMS ataset
@@ -33,6 +31,10 @@ Parameters:
 	# evalution knn by varying k
 	python anonymizer.py a knn k
 
+IDLE execution
+    #Usage: Open Python IDLE 
+	Open File anonymiser.py
+	Run / F5 
 
 ### For more information:
 [1] Lin J.L, Wei M.C. An efficient clustering method for k-anonymization[C], In Proceedings of the 2008 international workshop on Privacy and anonymity in information society(PAIS), 2008.
