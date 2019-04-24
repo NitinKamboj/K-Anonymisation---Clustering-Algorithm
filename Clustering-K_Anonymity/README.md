@@ -11,7 +11,7 @@ I used **both adult and INFORMS** dataset in this implementation. For clarificat
 
 
 ### Usage and Parameters:
-My Implementation is based on Python 3.7.3 64Bit architecture. Please make sure your Python environment is correctly installed. You can run Mondrian in following steps: 
+My Implementation is based on **PYTHON 3.7.3 64BIT ARCHITECTURE**. Please make sure your Python environment is correctly installed. You can run Mondrian in following steps: 
 
 1) Download (or clone) the whole project. 
 
@@ -50,6 +50,9 @@ IDLE execution
 [6] Cluster based generalization for k-anonymity(https://github.com/qiyuangong/Clustering_based_K_Anon)
 
 ==========================
+
 by Nitin Kamboj	
+
 nitin.kamboj@gmail.com
+
 24/April/2019
