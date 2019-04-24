@@ -13,11 +13,13 @@ I used **both adult and INFORMS** dataset in this implementation. For clarificat
 
 
 ### Usage and Parameters:
-My Implementation is based on Python 2.7 (not Python 3.0). Please make sure your Python environment is collectly installed. You can run Mondrian in following steps: 
+My Implementation is based on Python 3.7.3 64Bit architecture. Please make sure your Python environment is collectly installed. You can run Mondrian in following steps: 
 
 1) Download (or clone) the whole project. 
 
-2) Run `anonymized.py` in root dir with CLI.
+2) Run `anonymizer.py` in root dir with CLI or IDLE.
+
+3) Default K value is set to 10
 
 Parameters:
 
@@ -29,7 +31,7 @@ Parameters:
 	python anonymizer.py a oka 10
 	
 	# evalution knn by varying k
-	python anonymized.py a knn k
+	python anonymizer.py a knn k
 
 
 ### For more information:
@@ -43,8 +45,9 @@ Parameters:
 
 [5] G. Ghinita, P. Karras, P. Kalnis, N. Mamoulis. Fast data anonymization with low information loss. Proceedings of the 33rd international conference on Very large data bases, VLDB Endowment, 2007, 758-769
 
-==========================
-by Qiyuan Gong
-qiyuangong@gmail.com
+[6] Cluster based generalization for k-anonymity(https://github.com/qiyuangong/Clustering_based_K_Anon)
 
-2016-1-27
+==========================
+by Nitin Kamboj	
+nitin.kamboj@gmail.com
+24/April/2019
