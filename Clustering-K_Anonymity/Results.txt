@@ -1,0 +1,8 @@
+C:\Users\Kamboj\Downloads\Clustering-K_Anonymity>python anonymizer.py a oka 20
+Adult data
+['anonymizer.py', 'a', 'oka', '20']
+K=20
+Begin to OKA Cluster based on NCP
+NCP 17.86%
+Running time 2418.13 seconds
+Finish Cluster based K-Anon!!

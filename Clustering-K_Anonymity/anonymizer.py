@@ -27,7 +27,8 @@ def write_to_file(result):
     """
     with open("data/anonymized.data", "w") as output:
         for r in result:
-            output.write(';'.join(r) + '\n')
+            outstr =(';'.join(''.join(elems) for elems in r))
+            output.write(''.join(outstr) + '\n')
 
 
 def get_result_one(att_trees, data, type_alg, k=DEFAULT_K):

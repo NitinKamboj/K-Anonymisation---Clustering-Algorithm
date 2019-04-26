@@ -11,7 +11,7 @@ I used **both adult and INFORMS** dataset in this implementation. For clarificat
 
 
 ### Usage and Parameters:
-My Implementation is based on **PYTHON 3.7.3 64BIT ARCHITECTURE**. Please make sure your Python environment is correctly installed. You can run Mondrian in following steps: 
+My Implementation is based on **PYTHON 3.7.3 64BIT ARCHITECTURE**. Please make sure your Python environment is correctly installed. You can run Clustering in following steps: 
 
 1) Download (or clone) the whole project. 
 
@@ -25,7 +25,7 @@ CLI Parameters:
 	#a: adult dataset, i: INFORMS ataset
 	#knn:k-nearest neighbor, kmember: k-member, oka: one time pass k-means algorithm
 	#k: varying k, qi: varying qi numbers, data: varying size of dataset
-	# run Mondrian with adult data and oka with K(K=10)
+	# run Clustering based algorithm with adult data and oka with K(K=10)
 	python anonymizer.py a oka 10
 	
 	# evalution knn by varying k
@@ -50,9 +50,6 @@ IDLE execution
 [6] Cluster based generalization for k-anonymity(https://github.com/qiyuangong/Clustering_based_K_Anon)
 
 ==========================
-
 by Nitin Kamboj	
-
 nitin.kamboj@gmail.com
-
 24/April/2019

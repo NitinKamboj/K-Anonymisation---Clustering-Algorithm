@@ -369,7 +369,7 @@ def adjust_cluster(cluster, residual, k):
     for i, t in enumerate(cluster.member):
         dist = r_distance(center, t)
         dist_dict[i] = dist
-    sorted_dict = sorted(dist_dict.iteritems(), key=operator.itemgetter(1))
+    sorted_dict = sorted(dist_dict.items(), key=operator.itemgetter(1))
     need_adjust_index = [t[0] for t in sorted_dict[k:]]
     need_adjust = [cluster.member[t] for t in need_adjust_index]
     residual.extend(need_adjust)
@@ -411,7 +411,8 @@ def clustering_oka(data, k=25):
         if len(less_clusters) > 0:
             index = find_best_cluster_iloss(record, less_clusters)
             less_clusters[index].add_record(record)
-            if less_clusters[index] >= k:
+            z = len(less_clusters)
+            if z >= k:
                 clusters.append(less_clusters.pop(index))
         else:
             index = find_best_cluster_iloss(record, clusters)
